@@ -1,12 +1,13 @@
-# NOTE: Use this file if you want to build with custom messages that reside in a separate remote repo.
-# NOTE: use the following format
-
 repositories:
-#  src/ros2cs/custom_messages/<package_name>:
-#    type: git
-#    url: <repo_url>
-#    version: <repo_branch>
-#  custom_messages/<package2_name>:
-#    ...
-#    ...
-
+    src/ros2cs/custom_messages/geographic_msgs/:
+        type: git
+        url: https://github.com/ros-geographic-info/geographic_info.git
+        version: ros2
+    src/ros2cs/custom_messages/robot_localization/:
+        type: git
+        url: https://github.com/cra-ros-pkg/robot_localization.git
+        version: humble-devel
+    src/ros2cs/autoware_msgs/autoware_perception_msgs/:
+        type: git
+        url: https://github.com/autowarefoundation/autoware_msgs.git
+        version: main
